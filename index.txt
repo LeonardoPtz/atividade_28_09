@@ -1,0 +1,31 @@
+function jogador(jogador) {
+    switch (jogador) {
+        case 'Neymar':
+            return ('Neymar é hexa')
+        case 'Messi':
+            return ('Messi eliminado')
+        case 'CR7':
+            return ('Robozao')
+    }
+}
+
+
+function calcularArea(raio) {
+    return 3.14 * (raio * raio)
+}
+
+function converteReais(dolar) {
+    return dolar * 5.38
+}
+
+function estoque(qtd) {
+
+    if (qtd > 0) {
+        return ("Estoque positivo")
+    }
+    else {
+        return "Estoque zerado ou negativo"
+    }
+}
+
+module.exports = { jogador, calcularArea, converteReais, estoque }
